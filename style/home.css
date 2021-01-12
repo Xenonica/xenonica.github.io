@@ -1,0 +1,114 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navibar{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14pt;
+    z-index: 100;
+    position: fixed;
+}
+
+.nav-text{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #5a5959;
+}
+
+.nav-text:hover{
+    color: #5691f0;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    color: #5a5959;
+    margin-bottom: 140px;
+}
+
+.title-hello{
+    font-weight: 380;
+}
+
+.title-welcome{
+    font-size: 13pt;
+    margin:0 auto;
+}
+
+.section{
+    background-color: #ebebeb !important;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.section-header{
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-body{
+    color: black;
+}
+.shop-icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 35px;
+}
+
+.proj-card{
+    padding: 10px;
+    margin: 10px;
+}
+
+.card:hover{
+    background-color: rgb(214, 211, 211);
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.card a:hover, .card a{
+    text-decoration: none !important;
+}
+
+
+.copyright-footer{
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.footer{
+    /* background-color: #bdb8b8; */
+    /* min-height: 20.4vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-a{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details{
+    padding:10px;
+}
+
+.navibar.scrolled {
+    background-color: #ebebeb !important;
+    transition: background-color 200ms linear;
+    padding-bottom: 10px;
+}
