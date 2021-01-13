@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denoshop | Portfolio</title>
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/denoshop.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+    <script src="../scripts/home.js"></script>
 </head>
-<body>
-    <h1>WIP</h1>
+
+<body class="container-fluid">
+    <div class="head">
+        <div class="navibar">
+            <a class="nav-text" href="../index.html">Home</a>
+            <a class="nav-text" href="../index.html#projects">Projects</a>
+            <a class="nav-text" href="../index.html#contact">Contact</a>
+        </div>
+        <div class="title">
+            <h1 class="title-hello">Projects</h1>
+            <p class="title-welcome">Full Stack Development Project</p>
+        </div>
+    </div>
+    <div class="container">
+    </div>
+    <div class="section">
+        <div class="row mt-5 mb-5">
+            <div class="col-3"></div>
+            <div class="col-md-6 col-12 align-self-center" >
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610554425/portfolio/screencapture-localhost-3000-2021-01-14-00_09_33_rl08px.png" class="d-block w-100" alt="hacker-outfits">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610554880/portfolio/screencapture-localhost-3000-2021-01-14-00_20_26_t3zhyp.png" class="d-block w-100" alt="hacker-tools">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610554815/portfolio/screencapture-localhost-3000-2021-01-14-00_17_55_wg6jfc.png" class="d-block w-100" alt="recommended-products">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610554576/portfolio/screencapture-localhost-3000-account-2021-01-14-00_15_06_oeiwqs.png" class="d-block w-100" alt="wishlist-page">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div> 
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-md-6 col-12">
+                <h2>Project Description</h2>
+                <p>Denoshop is an e-commerce website that allows YouTubers to sell merch to their fans.</p>
+                <p>We use the Scrum model, the agile approach to organise, plan and provide feedback to each other for this project. Every 1-2 weeks we will meet and discuss together what
+                    each of us has done during the past 1-2 weeks related to the project. This sprint cycle continues till the end of the project.
+                </p>
+                <h5>My contribution to the team</h5>
+                <ul>
+                    <li>Implement product management in admin dashboard</li>
+                    <li>Implement category management in admin dashboard</li>
+                    <li>Implement coupon management in admin dashboard</li>
+                    <li>Implement wishlist feature for front-end users</li>
+                    <li>Implement pagination on product tab for front-end users</li>
+                    <li>Implement product recommendation using Recombee API for front-end users</li>
+                </ul>
+                <h5>Skills learnt/improved throughout this project</h5>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                    <li>Node.js</li>
+                    <li>Javascript</li>
+                    <li>Handlebars</li>
+                    <li>HTML/CSS & Bootstrap</li>
+                </ul>
+            </div>
+            <div class="col-3">
+            </div>
+        </div> 
+    </div>
 </body>
+
 </html>
