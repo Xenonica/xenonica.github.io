@@ -1,7 +1,7 @@
 .section{
     background-color: #ebebeb !important;
     padding: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .section-header{
@@ -32,19 +32,6 @@
 
 .card a:hover, .card a, .contact a{
     text-decoration: none !important;
-}
-
-
-.copyright-footer{
-    text-align: center;
-    justify-content: flex-end;
-}
-
-.footer{
-    /* background-color: #bdb8b8; */
-    /* min-height: 20.4vh; */
-    display: flex;
-    flex-direction: column;
 }
 
 .contact{
