@@ -1,11 +1,18 @@
-@import url('//fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@font-face { font-family: Quicksand-semibold; 
+    src: url('./fonts/Quicksand-SemiBold.ttf'); 
+} 
+
+@font-face { font-family: Quicksand-regular; 
+    src: url('./fonts/Quicksand-Regular.ttf'); 
+} 
 
 *{
-    font-family: 'Quicksand', sans-serif;
+    font-family: Quicksand-regular, sans-serif;
+    color: #5a5959;
 }
 
 h1, h2, h5{
-    font-weight: 600 !important;
+    font-family: Quicksand-semibold;
 }
 
 .head{
