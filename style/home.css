@@ -1,7 +1,7 @@
 .section{
     background-color: #ebebeb !important;
     padding: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .section-header{
@@ -47,3 +47,14 @@
 .contact-details{
     padding:10px;
 }
+
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+}
+
