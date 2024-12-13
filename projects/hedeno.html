@@ -6,7 +6,8 @@
     <title>HeDeno | Portfolio</title>
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/projects.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
     <script src="../scripts/home.js"></script>
@@ -20,24 +21,27 @@
         gtag('config', 'G-8WL1CFTN47');
     </script>
 </head>
-<body class="">
-    <div class="head">
-        <div class="navibar">
+<body>
+    <!-- Navbar-->
+    <div class="navibar">
+        <div class="nav-container">
             <a class="nav-text" href="../index.html">Home</a>
             <a class="nav-text" href="../index.html#projects">Projects</a>
             <a class="nav-text" href="../index.html#contact">Contact</a>
         </div>
-        <div class="title">
-            <h1 class="title-hello">Projects</h1>
-            <p class="title-welcome">HeDeno - Clinic Management Web App</p>          
-        </div>
     </div>
-    <div class="container">
+
+    <!-- Project Header -->
+    <div class="project-header">
+        <h1 class="project-title">HeDeno</h1>
+        <p class="project-subtitle">Clinic Management Web App</p>
     </div>
-    <div class="section">
-        <div class="row mt-5 mb-5">
-            <div class="col-3"></div>
-            <div class="col-md-6 col-12 align-self-center"> 
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <div class="container">
+            <!-- Image Carousel -->
+            <div class="project-carousel">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
@@ -50,25 +54,25 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613882852/portfolio/hedeno/Screenshot_2021-02-21_124656_fvst5h.jpg" class="d-block w-100" alt="book appointment page">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613882852/portfolio/hedeno/Screenshot_2021-02-21_124656_fvst5h.jpg" loading="lazy" class="d-block w-100" alt="book appointment page">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883519/portfolio/hedeno/Screenshot_2021-02-21_125328_rt80qu.jpg" class="d-block w-100" alt="book appointment page with data">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883519/portfolio/hedeno/Screenshot_2021-02-21_125328_rt80qu.jpg" loading="lazy" class="d-block w-100" alt="book appointment page with data">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883518/portfolio/hedeno/Screenshot_2021-02-21_125401_adwbay.jpg" class="d-block w-100" alt="book appointment success">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883518/portfolio/hedeno/Screenshot_2021-02-21_125401_adwbay.jpg" loading="lazy" class="d-block w-100" alt="book appointment success">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883519/portfolio/hedeno/Screenshot_2021-02-21_125724_j0bge7.jpg" class="d-block w-100" alt="view appointments page">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883519/portfolio/hedeno/Screenshot_2021-02-21_125724_j0bge7.jpg" loading="lazy" class="d-block w-100" alt="view appointments page">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883623/portfolio/hedeno/screencapture-localhost-50198-UpdateAppointment-2021-02-21-12_59_26_djvaij.png" class="d-block w-100" alt="update appointment page">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883623/portfolio/hedeno/screencapture-localhost-50198-UpdateAppointment-2021-02-21-12_59_26_djvaij.png" loading="lazy" class="d-block w-100" alt="update appointment page">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883518/portfolio/hedeno/Screenshot_2021-02-21_125743_llsl6i.jpg" class="d-block w-100" alt="view all mc's">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883518/portfolio/hedeno/Screenshot_2021-02-21_125743_llsl6i.jpg" loading="lazy" class="d-block w-100" alt="view all mc's">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883519/portfolio/hedeno/screencapture-localhost-50198-PatientMC-2021-02-21-12_57_58_zjkanw.png" class="d-block w-100" alt="mc format">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1613883519/portfolio/hedeno/screencapture-localhost-50198-PatientMC-2021-02-21-12_57_58_zjkanw.png" loading="lazy" class="d-block w-100" alt="mc format">
                         </div>                     
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
@@ -81,36 +85,39 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3"></div>
-        </div> 
-        <div class="row">
-            <div class="col-3">
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <div class="project-section">
+                    <h2>Project Overview</h2>
+                    <p>HeDeno is a clinic management software where doctors, clinical administrators and patients can better connect with each other, where doctors can better focus on diagnosing patients, clinical administrators can automate tedious paperwork and patients can have a smoother healthcare process. Thus, giving everyone a better healthcare experience on a daily basis.</p>                   
+                    <p>Today, healthcare workers and patients of different age groups have brought up various issues regarding the current healthcare practices. (e.g. Repetitive paperwork) We aim to fix those issues through the creation of our web app, HeDeno.</p>
+                    <p>On top of that, the healthcare industry has mostly stagnated in its use of traditional practices. (e.g. Onsite queueing) Little attempts have been made to bring the industry online, and even less have been successful at it. We aim to give this push through HeDeno.</p>
+                </div>
+
+                <div class="project-section">
+                    <h2>My Contribution</h2>
+                    <ul class="contribution-list">
+                        <li>Implement booking appointment feature</li>
+                        <li>Implement viewing upcoming & past appointments</li>
+                        <li>Implement viewing of patient's digital medical certificate</li>
+                        <li>Implement QR code to check if the downloaded/print version corresponds to the online MC</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ASP.NET</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-12">
-                <h2>Project Description</h2>
-                <p>HeDeno is a clinic management software where doctors, clinical administrators and patients can better connect with each other, where doctors can better focus on diagnosing patients, clinical administrators can automate tedious paperwork and patients can have a smoother healthcare process. Thus, giving everyone a better healthcare experience on a daily basis.</p>                   
-                <p>Today, healthcare workers and patients of different age groups have brought up various issues regarding the current healthcare practices. (e.g. Repetitive paperwork) We aim to fix those issues through the creation of our web app, HeDeno.</p>
-                <p>On top of that, the healthcare industry has mostly stagnated in its use of traditional practices. (e.g. Onsite queueing) Little attempts have been made to bring the industry online, and even less have been successful at it. We aim to give this push through HeDeno.</p>
-                <h5>My contribution to the team</h5>
-                <ul>
-                    <li>Implement booking appointment feature</li>
-                    <li>Implement viewing upcoming & past appointments</li>
-                    <li>Implement viewing of patient's digital medical certificate</li>
-                    <li>Implement QR code to check if the downloaded/print version corresponds to the online MC</li>
-                </ul>
-                <h5>Skills learnt/improved throughout this project</h5>
-                <ul>
-                    <li>ASP.NET</li>
-                    <li>C#</li>
-                    <li>SQL</li>
-                    <li>HTML/CSS</li>
-                </ul>
-                <a href="https://github.com/XinYang-YXY/heDeno">Github repository</a>
-            </div>
-            <div class="col-3">
-            </div>
-        </div> 
+        </div>
     </div>
+
     <footer class="footer">
         <div class="container">
         </div>

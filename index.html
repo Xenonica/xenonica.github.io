@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Portfolio</title>
-    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
-    <script src="scripts/home.js"></script>
+    <script src="scripts/index.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WL1CFTN47"></script>
     <script>
@@ -20,111 +21,161 @@
 
         gtag('config', 'G-8WL1CFTN47');
     </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-<body class="">
-    <div class="head">
+<body>
+
+    <!-- Intro -->
+    <div class="hero-section">
         <div class="navibar">
-            <a class="nav-text" href="">Home</a>
-            <a class="nav-text" href="#projects">Projects</a>
-            <a class="nav-text" href="#contact">Contact</a>
+            <div class="nav-container">
+                <a class="nav-text" href="index.html">Home</a>
+                <a class="nav-text" href="#projects">Projects</a>
+                <a class="nav-text" href="#contact">Contact</a>
+            </div>
         </div>
-        <div class="title">
-            <h1 class="title-hello">Hello, I'm Lim Fang Jun</h1>
-            <p class="title-welcome">Welcome to my simple portfolio</p>
+        <div class="hero-content">
+            <h1 class="hero-title">Hello, I'm Lim Fang Jun</h1>
+            <p class="hero-subtitle">Computing Science Student & Full Stack Developer</p>
         </div>
     </div>
+
+    <!-- Projects -->
     <div class="section" id="projects">
-        <h1 class="section-header">Projects</h1>
-        <div class="row mt-5 no-gutter">
-            <div class="col-12 col-md-4">
-                <div class="card proj-card">
-                    <a href="./projects/denoshop.html">
-                        <div class="card-body">
-                            <img src="./icons/shopping-cart.svg" class="card-img shop-icon" alt="denoshop">
-                            <p class="card-text text-center">Full Stack Development Project</p>
+        <h2 class="section-header">Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- Denoshop Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://res.cloudinary.com/xenonic/image/upload/v1610554425/portfolio/screencapture-localhost-3000-2021-01-14-00_09_33_rl08px.png" loading="lazy" alt="Denoshop" class="project-img">
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3 class="project-title">Denoshop</h3>
+                        <p class="project-description">E-commerce web application that allows influencers to sell their merchandise to fans</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Handlebars</span>
                         </div>
-                    </a>
+                    </div>
+                    <a href="projects/denoshop.html" class="project-link">View Project →</a>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="card proj-card">
-                    <a href="./projects/pepestore.html">
-                        <div class="card-body">
-                            <img src="./icons/shopping-bag.svg" class="card-img shop-icon" alt="pepestore">
-                            <p class="card-text text-center">App Development Project</p>
+
+            <!-- HeDeno Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://res.cloudinary.com/xenonic/image/upload/v1613882852/portfolio/hedeno/Screenshot_2021-02-21_124656_fvst5h.jpg" loading="lazy" alt="HeDeno" class="project-img">
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3 class="project-title">HeDeno</h3>
+                        <p class="project-description">Clinic management software where doctors, clinical administrators and patients can better connect with each other</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">HTML/CSS</span>
                         </div>
-                    </a>
+                    </div>
+                    <a href="projects/hedeno.html" class="project-link">View Project →</a>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="card proj-card">
-                    <a href="./projects/swandroidapp.html">
-                        <div class="card-body">
-                            <img src="./icons/smartphone.svg" class="card-img shop-icon" alt="sports & wellness">
-                            <p class="card-text text-center">ITE Final Year Project</p>
+
+            <!-- NHCS Shelter Inspection -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://res.cloudinary.com/xenonic/image/upload/v1629644048/portfolio/nhcsapp/Screenshot_2021-08-22_225017_wyztgc.png" loading="lazy" alt="NHCS App" class="project-img">
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3 class="project-title">NHCS Shelter Inspection</h3>
+                        <p class="project-description">Web application to record inspection details, schedule inspections and generate inspection reports for NHCS shelters</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">AWS S3</span>
+                            <span class="tech-tag">JavaScript</span>
                         </div>
-                    </a>
+                    </div>
+                    <a href="projects/nhcsapp.html" class="project-link">View Project →</a>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="card proj-card">
-                    <a href="./projects/hedeno.html">
-                        <div class="card-body">
-                            <img src="./icons/activity.svg" class="card-img shop-icon" alt="hedeno">
-                            <p class="card-text text-center">Enterprise Development Project</p>
+
+            <!-- Pepestore -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://res.cloudinary.com/xenonic/image/upload/v1611923607/portfolio/pepestore/Screenshot_2021-01-29_203308_puihsx.jpg" loading="lazy" alt="Pepestore" class="project-img">
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3 class="project-title">Pepestore</h3>
+                        <p class="project-description">B2B web application for secure product trading with third-party verification and delivery management</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Jinja2</span>
+                            <span class="tech-tag">HTML/CSS</span>
                         </div>
-                    </a>
+                    </div>
+                    <a href="projects/pepestore.html" class="project-link">View Project →</a>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="card proj-card">
-                    <a href="./projects/nhcsapp.html">
-                        <div class="card-body">
-                            <img src="./icons/home.svg" class="card-img shop-icon" alt="nhcsapp">
-                            <p class="card-text text-center">NYP Final Year Project</p>
+
+            <!-- SW Android App -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869540/portfolio/homepagenew_zcrkrb.png" loading="lazy" alt="SW Android App" class="project-img">
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3 class="project-title">Sports & Wellness Android App</h3>
+                        <p class="project-description">Android application for managing Sports & Wellness activities, attendance, and IPPT calculations</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Firebase</span>
                         </div>
-                    </a>
+                    </div>
+                    <a href="projects/swandroidapp.html" class="project-link">View Project →</a>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Socials -->
     <div class="section" id="contact">
-        <h1 class="section-header">Contact</h1>
-        <div class="contact mt-5">
-                <p class="contact-details"><a href="https://www.linkedin.com/in/lim-fang-jun-3756791b2/">Linkedin</a></p>
-                <p class="contact-details"><a href="https://github.com/Xenonica">Github</a></p>
-                <p class="contact-details"><a href="mailto:dragnobi@gmail.com">Email</a></p>
+        <h2 class="section-header">Let's Connect</h2>
+        <div class="contact-container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/lim-fang-jun/" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Xenonica" class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:dragnobi@gmail.com" class="social-link">
+                    <i class="far fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
         </div>
-        <!-- <div class="contact-a">
-            <p class="contact-details">Email: dragnobi@gmail.com</p>
-        </div> -->
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-        </div>
         <div class="copyright-footer">
-            <p>©2021 Copyright: <a class="text-dark" href="https://xenonica.github.io">Lim Fang Jun</a></p>
+            <p>©2024 Copyright: <a class="text-dark" href="https://www.linkedin.com/in/lim-fang-jun/">Lim Fang Jun</a></p>
         </div>
     </footer>
 </body>
 
 </html>
-
-<!--<div class="card project-name">
-    <div class="row">
-        <div class="col-md-5">
-            <img src="https://res.cloudinary.com/xenonic/image/upload/c_scale,h_513/v1610451161/screencapture-localhost-3000-2021-01-12-19_31_47_nunejm.png"
-                class="card-img" alt="denoshop">
-        </div>
-        <div class="col-md-7">
-            <div class="card-body">
-                <h2 class="card-title">Denoshop</h2>
-                <p class="card-text">A project done by 5 people, Denoshop is an e-commerce website that allows
-                    YouTubers to sell merch.</p>
-            </div>
-        </div>
-    </div>
-</div>!-->

@@ -1,5 +1,88 @@
-.section{
-    background-color: #ebebeb !important;
-    padding: 25px;
-    margin-bottom: 20px;
+:root {
+    --background-color: #f8fafc;
+    --text-color: #1f2937;
+    --card-background: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+/* Project Header */
+.project-header {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: white;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.project-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Project Content */
+.project-section {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.project-section h2 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.project-content {
+    background-color: var(--background-color);
+    padding: 4rem 0;
+}
+
+.project-carousel {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.contribution-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tech-tag {
+    background: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 2rem;
+    }
+    
+    .project-subtitle {
+        font-size: 1rem;
+    }
+    
+    .project-section {
+        padding: 1.5rem;
+    }
 }
