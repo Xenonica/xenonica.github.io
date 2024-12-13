@@ -6,7 +6,8 @@
     <title>SW Android App | Portfolio</title>
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/projects.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
     <script src="../scripts/home.js"></script>
@@ -21,56 +22,26 @@
     </script>
 </head>
 <body class="">
-    <div class="head">
-        <div class="navibar">
+    <!-- Modern Navigation -->
+    <div class="navibar">
+        <div class="nav-container">
             <a class="nav-text" href="../index.html">Home</a>
             <a class="nav-text" href="../index.html#projects">Projects</a>
             <a class="nav-text" href="../index.html#contact">Contact</a>
         </div>
-        <div class="title">
-            <h1 class="title-hello">Projects</h1>
-            <p class="title-welcome">Sports & Wellness Android App</p>
-        </div>
     </div>
-    <div class="container">
+
+    <!-- Project Header -->
+    <div class="project-header">
+        <h1 class="project-title">Sports & Wellness App</h1>
+        <p class="project-subtitle">Android Application</p>
     </div>
-    <div class="section">
-        <div class="row">
-            <div class="col-3">
-            </div>
-            <div class="col-md-6 col-12">
-                <h2>Project Description</h2>
-                <p>Sports & Wellness is a subject that aims to empower students with the fundamental knowledge and skills for a lifelong pursuit of healthy living. 
-                This subject allows students to learn practical tips to adopt a healthy lifestyle and be exposed to a broad range of physical activities. 
-                </p>                   
-                <p>It allows Sports and Wellness lecturers to able to take attendance, calculate IPPT, storing IPPT records,  storing student records within a single app. It makes it easier for the lecturers to access.
-                    It also provides a platform for students to explore and learn about health, sports and fitness outside of Sports & Wellness lessons.
-                </p>
-                <p>Overall, this project is challenging as we do not have any prior knowledge in android development as it was not taught in our curriculum.</p>
-                <h5>My contribution to the team</h5>
-                <ul>
-                    <li>Implement login feature</li>
-                    <li>Implement attendance system for S&W lecturers</li>
-                    <li>Implement IPPT calculator</li>
-                    <li>Implemenmt News & Event feature for S&W lecturers</li>
-                    <li>Saving student IPPT result and attendance results to firebase</li>
-                </ul>
-                <h5>Skills learnt/improved throughout this project</h5>
-                <ul>
-                    <li>Communication</li>
-                    <li>Motivation</li>
-                    <li>Java</li>
-                    <li>Android Development</li>
-                    <li>Firebase</li>
-                </ul>
-                <a href="https://github.com/Xenonica/SWAndroidApp">Github repository</a>
-            </div>
-            <div class="col-3">
-            </div>
-        </div> 
-        <div class="row mt-5 mb-5">
-            <div class="col-3"></div>
-            <div class="col-md-6 col-12 align-self-center" >
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <div class="container">
+            <!-- Image Carousel -->
+            <div class="project-carousel w-25">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
@@ -88,40 +59,40 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869540/portfolio/homepagenew_zcrkrb.png" class="d-block w-100" alt="android-home">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869540/portfolio/homepagenew_zcrkrb.png" loading="lazy" class="d-block w-100" alt="android-home">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869540/portfolio/LecturerLoginPage_flejhp.png" class="d-block w-100" alt="android-login">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869540/portfolio/LecturerLoginPage_flejhp.png" loading="lazy" class="d-block w-100" alt="android-login">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869542/portfolio/TeacherMenu_qkvcv7.png" class="d-block w-100" alt="android-lecturer-menu">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869542/portfolio/TeacherMenu_qkvcv7.png" loading="lazy" class="d-block w-100" alt="android-lecturer-menu">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869539/portfolio/Attendance_orxwyy.png" class="d-block w-100" alt="android-attendance">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869539/portfolio/Attendance_orxwyy.png" loading="lazy" class="d-block w-100" alt="android-attendance">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869540/portfolio/ViewAttendance_bbrgo7.png" class="d-block w-100" alt="android-attendance-results">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869540/portfolio/ViewAttendance_bbrgo7.png" loading="lazy" class="d-block w-100" alt="android-attendance-results">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869538/portfolio/IPPTCalculator1_ubdpmw.png" class="d-block w-100" alt="android-ippt">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869538/portfolio/IPPTCalculator1_ubdpmw.png" loading="lazy" class="d-block w-100" alt="android-ippt">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869538/portfolio/IPPTResults_lbzfjb.png" class="d-block w-100" alt="android-ippt-results">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869538/portfolio/IPPTResults_lbzfjb.png" loading="lazy" class="d-block w-100" alt="android-ippt-results">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869539/portfolio/StudentDetails1_j9fbok.png" class="d-block w-100" alt="android-student-names">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869539/portfolio/StudentDetails1_j9fbok.png" loading="lazy" class="d-block w-100" alt="android-student-names">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869539/portfolio/StudentDetails2_yyqu6f.png" class="d-block w-100" alt="android-student-details">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869539/portfolio/StudentDetails2_yyqu6f.png" loading="lazy" class="d-block w-100" alt="android-student-details">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869540/portfolio/NewsEvents_yjedjk.png" class="d-block w-100" alt="android-news-events">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869540/portfolio/NewsEvents_yjedjk.png" loading="lazy" loading="lazy" class="d-block w-100" alt="android-news-events">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869542/portfolio/StudentMenu_tljubq.png" class="d-block w-100" alt="android-student-menu">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869542/portfolio/StudentMenu_tljubq.png" loading="lazy" class="d-block w-100" alt="android-student-menu">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869539/portfolio/StudentDetails1_j9fbok.png" class="d-block w-100" alt="android-student-names">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1610869539/portfolio/StudentDetails1_j9fbok.png" loading="lazy" class="d-block w-100" alt="android-student-names">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
@@ -134,15 +105,49 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3"></div>
-        </div> 
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <div class="project-section">
+                    <h2>Project Overview</h2>
+                    <p>Sports & Wellness is a subject that aims to empower students with the fundamental knowledge and skills for a lifelong pursuit of healthy living. 
+                        This subject allows students to learn practical tips to adopt a healthy lifestyle and be exposed to a broad range of physical activities. 
+                        </p>                   
+                        <p>It allows Sports and Wellness lecturers to able to take attendance, calculate IPPT, storing IPPT records,  storing student records within a single app. It makes it easier for the lecturers to access.
+                            It also provides a platform for students to explore and learn about health, sports and fitness outside of Sports & Wellness lessons.
+                        </p>
+                        <p>Overall, this project is challenging as we do not have any prior knowledge in android development as it was not taught in our curriculum.</p>
+                </div>
+
+                <div class="project-section">
+                    <h2>My Contribution</h2>
+                    <ul class="contribution-list">
+                        <li>Implement login feature</li>
+                        <li>Implement attendance system for S&W lecturers</li>
+                        <li>Implement IPPT calculator</li>
+                        <li>Implemenmt News & Event feature for S&W lecturers</li>
+                        <li>Saving student IPPT result and attendance results to firebase</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Android Development</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <footer class="footer">
         <div class="container">
         </div>
         <div class="copyright-footer">
             <p>©2021 Copyright: <a class="text-dark" href="https://xenonica.github.io">Lim Fang Jun</a></p>
         </div>
-    </footer>
+    </footer> 
 </body>
 </html>
