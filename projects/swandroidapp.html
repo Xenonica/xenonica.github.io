@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sports & Wellness Android App - A comprehensive mobile solution for managing fitness activities, IPPT calculations, attendance tracking, and student records using Java and Firebase.">
     <title>SW Android App | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/projects.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
 <body class="">
@@ -22,15 +23,18 @@
 
     <!-- Project Header -->
     <div class="project-header">
-        <h1 class="project-title">Sports & Wellness App (2018)</h1>
-        <p class="project-subtitle">Android Application</p>
+        <div class="container">
+            <a href="../index.html#projects" class="back-link hidden"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            <h1 class="project-title hidden">Sports & Wellness App (2018)</h1>
+            <p class="project-subtitle hidden">Android Application</p>
+        </div>
     </div>
 
     <!-- Project Content -->
     <div class="project-content">
         <div class="container">
             <!-- Image Carousel -->
-            <div class="project-carousel w-25">
+            <div class="project-carousel w-75 hidden">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
@@ -97,7 +101,7 @@
 
             <!-- Project Details -->
             <div class="project-details">
-                <div class="project-section">
+                <div class="project-section hidden">
                     <h2>Project Overview</h2>
                     <p>Sports & Wellness is a subject that aims to empower students with the fundamental knowledge and skills for a lifelong pursuit of healthy living. 
                         This subject allows students to learn practical tips to adopt a healthy lifestyle and be exposed to a broad range of physical activities. 
@@ -108,7 +112,7 @@
                         <p>Overall, this project is challenging as we do not have any prior knowledge in android development as it was not taught in our curriculum.</p>
                 </div>
 
-                <div class="project-section">
+                <div class="project-section hidden">
                     <h2>My Contribution</h2>
                     <ul class="contribution-list">
                         <li>Implement login feature</li>
@@ -119,7 +123,7 @@
                     </ul>
                 </div>
 
-                <div class="project-section">
+                <div class="project-section hidden">
                     <h2>Tech Stack</h2>
                     <div class="tech-stack">
                         <span class="tech-tag">Java</span>
@@ -135,8 +139,9 @@
         <div class="container">
         </div>
         <div class="copyright-footer">
-            <p>©2025 Copyright: <a class="text-dark" href="https://xenonica.github.io">Lim Fang Jun</a></p>
+            <p>©2025 Copyright: <a href="https://xenonica.github.io">Lim Fang Jun</a></p>
         </div>
     </footer> 
+    <script src="../js/main.js"></script>
 </body>
 </html>

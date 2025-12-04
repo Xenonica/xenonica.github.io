@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tic Tac Toe game built in C featuring multiplayer mode, AI opponents with Minimax algorithm, custom UI with RayLib, and an integrated scoring system for competitive play.">
     <title>Tic Tac Toe | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/projects.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,15 +23,18 @@
 
     <!-- Project Header -->
     <div class="project-header">
-        <h1 class="project-title">Tic Tac Toe (2024)</h1>
-        <p class="project-subtitle">UI Game in C</p>
+        <div class="container">
+            <a href="../index.html#projects" class="back-link hidden"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            <h1 class="project-title hidden">Tic Tac Toe (2024)</h1>
+            <p class="project-subtitle hidden">UI Game in C</p>
+        </div>
     </div>
 
     <!-- Project Content -->
     <div class="project-content">
         <div class="container">
             <!-- Image Carousel -->
-            <div class="project-carousel w-50">
+            <div class="project-carousel w-75 hidden">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
@@ -61,12 +65,12 @@
 
             <!-- Project Details -->
             <div class="project-details">
-                <div class="project-section">
+                <div class="project-section hidden">
                     <h2>Project Overview</h2>
                     <p>This program allows two players to play a game of Tic Tac Toe against each other, or against a computer opponent using a Naive Bayes algorithm or a Minimax algorithm.</p>
                 </div>
 
-                <div class="project-section">
+                <div class="project-section hidden">
                     <h2>My Contribution</h2>
                     <ul class="contribution-list">
                         <li>Implement UI for the game</li>
@@ -76,7 +80,7 @@
                     </ul>
                 </div>
 
-                <div class="project-section">
+                <div class="project-section hidden">
                     <h2>Tech Stack</h2>
                     <div class="tech-stack">
                         <span class="tech-tag">C</span>
@@ -91,8 +95,9 @@
         <div class="container">
         </div>
         <div class="copyright-footer">
-            <p>©2025 Copyright: <a class="text-dark" href="https://xenonica.github.io">Lim Fang Jun</a></p>
+            <p>©2025 Copyright: <a href="https://xenonica.github.io">Lim Fang Jun</a></p>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>
