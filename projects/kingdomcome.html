@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tic Tac Toe game built in C featuring multiplayer mode, AI opponents with Minimax algorithm, custom UI with RayLib, and an integrated scoring system for competitive play.">
+    <title>Kingdom Come | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/projects.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar-->
+    <div class="navibar">
+        <div class="nav-container">
+            <a class="nav-text" href="../index.html">Home</a>
+            <a class="nav-text" href="../index.html#projects">Projects</a>
+            <a class="nav-text" href="../index.html#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Project Header -->
+    <div class="project-header">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link hidden"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            <h1 class="project-title hidden">Kingdom Come (2025)</h1>
+            <p class="project-subtitle hidden">HCI Project</p>
+        </div>
+    </div>
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <div class="container">
+            <!-- Image Carousel -->
+            <div class="project-carousel w-75 hidden">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="5"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="6"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765083175/portfolio/kingdomcome/7d21cedb-db5c-444c-bd23-9ddc04209072.png" loading="lazy" class="d-block w-100" alt="game screen">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765083365/portfolio/kingdomcome/2fab2854-07fe-4c06-95f5-179a82e068ac.png" class="d-block w-100" alt="game screen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765083131/portfolio/kingdomcome/0fa8c237-6570-4725-bbcd-e87105e267de.png" class="d-block w-100" alt="login screen">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765083194/portfolio/kingdomcome/f0a757c1-d914-402c-a1db-9dc551d556dd.png" class="d-block w-100" alt="build screen">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765083217/portfolio/kingdomcome/6a8f5caa-c71d-4852-b826-3482b962bab3.png" class="d-block w-100" alt="subject screen">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765083238/portfolio/kingdomcome/83f7d3a3-802f-4a1e-897e-a64c05438968.png" class="d-block w-100" alt="question correct screen">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765083255/portfolio/kingdomcome/d5d6f336-ad4e-471e-b214-db2857357923.png" class="d-block w-100" alt="question wrong screen">
+                        </div> 
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765083400/portfolio/kingdomcome/b7abc5ef-6504-46f7-a033-69ae3fdd9fdc.png" class="d-block w-100" alt="raid screen">
+                        </div>                 
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <div class="project-section hidden">
+                    <h2>Project Overview</h2>
+                    <p>Kingdom Come is a gamified learning platform designed to transform academic content into an engaging, interactive kingdom-management experience.</p>
+                    <p>The project reimagines routine educational tasks such as answering questions, recalling facts, and applying concepts as meaningful in-game actions like building structures, gathering resources, and defending a kingdom.</p>
+                    <p>Additionally, this aligns HCI design theme of enhancing learning efficiency and reducing cognitive load through intuitive interaction.</p>
+                    <br>
+                    <p>Note: This project is just a concept.</p>
+                </div>
+
+                <div class="project-section hidden">
+                    <h2>My Contribution</h2>
+                    <ul class="contribution-list">
+                        <li>Implement color contrast considerations for all menus</li>
+                        <li>Implement build menu navigation and UI</li>
+                        <li>Implement question feedback UI</li>
+                        <li>Implement question timer</li>   
+                    </ul>
+                </div>
+
+                <div class="project-section hidden">
+                    <h2>Tech Stack</h2>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Javascript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+        </div>
+        <div class="copyright-footer">
+            <p>©2025 Copyright: <a href="https://xenonica.github.io">Lim Fang Jun</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tic Tac Toe game built in C featuring multiplayer mode, AI opponents with Minimax algorithm, custom UI with RayLib, and an integrated scoring system for competitive play.">
+    <title>Don't Say Bojio | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/projects.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar-->
+    <div class="navibar">
+        <div class="nav-container">
+            <a class="nav-text" href="../index.html">Home</a>
+            <a class="nav-text" href="../index.html#projects">Projects</a>
+            <a class="nav-text" href="../index.html#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Project Header -->
+    <div class="project-header">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link hidden"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            <h1 class="project-title hidden">Don't say Bojio (2025)</h1>
+            <p class="project-subtitle hidden">Cloud & Distributed Computing Project</p>
+        </div>
+    </div>
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <div class="container">
+            <!-- Image Carousel -->
+            <div class="project-carousel w-75 hidden">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="4"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="5"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765104356/portfolio/dontsaybojio/101fbe9c-3fb0-4ffd-98f7-0aae905cd4bc.png" loading="lazy" class="d-block w-100" alt="login page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765104377/portfolio/dontsaybojio/d365e1b4-8361-4480-bde7-c7fb538af4d3.png" class="d-block w-100" alt="register page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765104616/portfolio/dontsaybojio/4bae2bcf-a161-46d3-ac49-6f57000e029c.png" class="d-block w-100" alt="home page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765104496/portfolio/dontsaybojio/58590a5b-0428-4546-9ed6-e12caa4490c3.png" class="d-block w-100" alt="create event page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765104662/portfolio/dontsaybojio/6b81697a-c863-4d47-910c-9aa6002555d5.png" class="d-block w-100" alt="swipe event page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765104689/portfolio/dontsaybojio/9002eb98-a20d-4431-961f-b9d448d68962.png" class="d-block w-100" alt="register event page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1765104796/portfolio/dontsaybojio/5337119e-7bb2-4c71-a399-a1feb7bab793.png" class="d-block w-100" alt="event group chat page">
+                        </div>                  
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <div class="project-section hidden">
+                    <h2>Project Overview</h2>
+                    <p>Don't say Bojio is a cloud-native event discovery platform designed to combat social isolation among the elderly by connecting them with family, friends, and community events. It allows the eldery to search for events, chats, connect with family.</p>
+                </div>
+
+                <div class="project-section hidden">
+                    <h2>Architecture</h2>
+                    <div class="project-architecture">
+                        <img class="img-fluid" src="https://camo.githubusercontent.com/82943913ec382d9f818b75fc29a158499d6855f651737800b258967540053b3f/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f70772f41503147637a4d514354707131324a53574e57564d66437132474c4e6e484371456a4d4b56716e6a3770616377464a476f6538525377616d6f46514c5853334b7079756c4d69573350524f385a4b6e70686a4b667549384369395933572d6a334a634b7968596f43476b366c4a5f424d3877416b665a6f3d773630332d683334342d6e6f" alt="architecture">
+                    </div>
+                </div>
+
+                <div class="project-section hidden">
+                    <h2>My Contribution</h2>
+                    <ul class="contribution-list">
+                        <li>Implement reverse proxy using Envoy</li>
+                        <li>Implement authentication logic using Amazon Cognito and gRPC</li>
+                        <li>Implement event group chat service using Websockets, Kafka and gRPC</li>
+                        <li>Implement group message encryption using AES</li> 
+                        <li>Setting up Amazon Cognito, S3, DynamoDB, ECR, and EKS</li>
+                        <li>Implement CI/CD pipeline for Amazon ECR and EKS</li>
+                        <li>Deploying to Amazon EKS</li>    
+                    </ul>
+                </div>
+
+                <div class="project-section hidden">
+                    <h2>Tech Stack</h2>
+                    
+                    <h3 class="tech-section-title">Frontend</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+
+                    <h3 class="tech-section-title">Backend</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">gRPC</span>
+                        <span class="tech-tag">Envoy</span>
+                        <span class="tech-tag">Kafka</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Amazon DynamoDB</span>
+                        <span class="tech-tag">Amazon S3</span>
+                    </div>
+
+                    <h3 class="tech-section-title">Cloud Services</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Amazon Cognito</span>
+                        <span class="tech-tag">Amazon EKS</span>
+                        <span class="tech-tag">Amazon ECR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+        </div>
+        <div class="copyright-footer">
+            <p>©2025 Copyright: <a href="https://xenonica.github.io">Lim Fang Jun</a></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
