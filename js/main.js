@@ -165,4 +165,43 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- Image Modal Logic ---
+    // Add click handlers to all carousel images for enlargement
+    const carouselImages = document.querySelectorAll('.carousel-item img');
+    if (carouselImages.length > 0) {
+        carouselImages.forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', function(e) {
+                e.stopPropagation();
+                openModal(this.src);
+            });
+        });
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    });
 });
+
+// Image modal functions (global scope for onclick attributes)
+function openModal(imgSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    if (modal && modalImg) {
+        modal.style.display = 'flex';
+        modalImg.src = imgSrc;
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
