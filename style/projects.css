@@ -139,29 +139,11 @@ body {
     border-color: #1e293b;
 }
 
-.contribution-list {
-    list-style: none;
-    padding: 0;
-}
-
 .contribution-list li {
     margin-bottom: 1rem;
     padding-left: 2rem;
     position: relative;
     line-height: 1.6;
-    color: #4b5563;
-}
-
-[data-theme="dark"] .contribution-list li {
-    color: #94a3b8;
-}
-
-.contribution-list li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--link-color);
-    font-weight: bold;
 }
 
 .tech-stack {
