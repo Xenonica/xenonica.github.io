@@ -185,6 +185,16 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // --- Dynamic Copyright Year ---
+    const updateYear = () => {
+        const yearElements = document.querySelectorAll('.copyright-year');
+        const currentYear = new Date().getFullYear();
+        yearElements.forEach(el => {
+            el.textContent = currentYear;
+        });
+    };
+    updateYear();
 });
 
 // Image modal functions (global scope for onclick attributes)
