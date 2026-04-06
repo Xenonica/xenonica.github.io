@@ -173,6 +173,8 @@ body {
     font-weight: 500;
     border: 1px solid #e2e8f0;
     transition: var(--transition);
+    text-decoration: none;
+    display: inline-block;
 }
 
 [data-theme="dark"] .tech-tag {

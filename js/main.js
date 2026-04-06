@@ -25,40 +25,60 @@ document.addEventListener('DOMContentLoaded', () => {
     observeElements();
 
 
-    // --- Pagination Logic ---
-    // Pagination is only active if .projects-grid exists on the page
+    // --- Pagination & Filtering Logic ---
     const projectsGrid = document.querySelector('.projects-grid');
-    if (projectsGrid) { // Only run on pages with projects-grid
-        const projectCards = Array.from(projectsGrid.querySelectorAll('.project-card'));
+    if (projectsGrid) {
+        const allProjectCards = Array.from(projectsGrid.querySelectorAll('.project-card'));
         const paginationContainer = document.querySelector('.pagination-container');
         const itemsPerPage = 3;
         let currentPage = 1;
-        const totalPages = Math.ceil(projectCards.length / itemsPerPage);
 
-        // Function to display a specific page of projects
+        // Check for tag in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const activeTag = urlParams.get('tag');
+
+        // Filter cards if tag is present
+        let projectCards = activeTag 
+            ? allProjectCards.filter(card => {
+                const dataTagsStr = card.getAttribute('data-tags') || '';
+                const dataTags = dataTagsStr.split(',').map(t => t.trim().toLowerCase());
+                const visualTags = Array.from(card.querySelectorAll('.tech-tag')).map(t => t.textContent.trim().toLowerCase());
+                
+                const searchTag = activeTag.toLowerCase();
+                return dataTags.includes(searchTag) || visualTags.includes(searchTag);
+            })
+            : allProjectCards;
+
+        // Add filter status if filtering
+        if (activeTag) {
+            const filterStatus = document.createElement('div');
+            filterStatus.className = 'filter-status';
+            filterStatus.innerHTML = `
+                <span>Showing projects with tag: <strong>${activeTag}</strong></span>
+                <a href="index.html#projects" class="clear-filter">Clear Filter</a>
+            `;
+            projectsGrid.parentNode.insertBefore(filterStatus, projectsGrid);
+        }
+
+        let totalPages = Math.ceil(projectCards.length / itemsPerPage);
+
         function showPage(page) {
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
 
+            // Hide all first
+            allProjectCards.forEach(card => card.style.display = 'none');
+
+            // Show and animate filtered ones
             projectCards.forEach((card, index) => {
                 if (index >= start && index < end) {
-                    // Show card
                     card.style.display = 'flex'; 
-                    
-                    // Re-trigger scroll animation:
-                    // 1. Remove 'show' class to reset state
-                    // 2. Add 'hidden' class to set initial hidden state
-                    // 3. Observe the element so the IntersectionObserver adds 'show' when in view
                     card.classList.remove('show'); 
                     card.classList.add('hidden');
                     observer.observe(card);
-                } else {
-                    // Hide card
-                    card.style.display = 'none';
                 }
             });
             
-            // Scroll to top of projects section smoothly when changing pages (except initial load)
             if(page !== 1) {
                 const projectsSection = document.getElementById('projects');
                 if (projectsSection) {
@@ -69,66 +89,39 @@ document.addEventListener('DOMContentLoaded', () => {
             updatePaginationControls();
         }
 
-        // Function to render pagination buttons (Prev, 1, 2, 3... Next)
         function updatePaginationControls() {
             if (!paginationContainer) return;
-            
             paginationContainer.innerHTML = '';
-            
-            if (totalPages <= 1) return; // Hide controls if only 1 page
+            if (totalPages <= 1) return;
 
-            // Prev Button
             const prevBtn = document.createElement('button');
             prevBtn.innerText = 'Previous';
             prevBtn.classList.add('pagination-btn');
-            prevBtn.setAttribute('aria-label', 'Previous Page');
             if (currentPage === 1) prevBtn.disabled = true;
-            prevBtn.addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    showPage(currentPage);
-                }
-            });
+            prevBtn.onclick = () => { if (currentPage > 1) { currentPage--; showPage(currentPage); } };
             paginationContainer.appendChild(prevBtn);
 
-            // Page Numbers
             for (let i = 1; i <= totalPages; i++) {
                 const pageBtn = document.createElement('button');
                 pageBtn.innerText = i;
                 pageBtn.classList.add('pagination-btn', 'page-number');
-                pageBtn.setAttribute('aria-label', `Page ${i}`);
-                if (i === currentPage) {
-                     pageBtn.classList.add('active');
-                     pageBtn.setAttribute('aria-current', 'page');
-                }
-                pageBtn.addEventListener('click', () => {
-                    currentPage = i;
-                    showPage(currentPage);
-                });
+                if (i === currentPage) pageBtn.classList.add('active');
+                pageBtn.onclick = () => { currentPage = i; showPage(currentPage); };
                 paginationContainer.appendChild(pageBtn);
             }
 
-            // Next Button
             const nextBtn = document.createElement('button');
             nextBtn.innerText = 'Next';
             nextBtn.classList.add('pagination-btn');
-            nextBtn.setAttribute('aria-label', 'Next Page');
             if (currentPage === totalPages) nextBtn.disabled = true;
-            nextBtn.addEventListener('click', () => {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    showPage(currentPage);
-                }
-            });
+            nextBtn.onclick = () => { if (currentPage < totalPages) { currentPage++; showPage(currentPage); } };
             paginationContainer.appendChild(nextBtn);
             
-            // Observe pagination container itself so it fades in if it was hidden
             if (paginationContainer.classList.contains('hidden')) {
                 observer.observe(paginationContainer);
             }
         }
 
-        // Initialize Pagination (show page 1)
         showPage(1);
     }
 

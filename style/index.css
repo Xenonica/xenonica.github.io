@@ -288,11 +288,25 @@ hr {
     font-size: 0.8rem;
     color: #475569;
     font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
 }
 
 [data-theme="dark"] .tech-tag {
     background-color: #334155;
     color: #f1f5f9;
+}
+
+a.tech-tag:hover {
+    background-color: var(--link-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+[data-theme="dark"] a.tech-tag:hover {
+    background-color: #60a5fa;
+    color: #0f172a;
 }
 
 .project-link {
@@ -309,6 +323,42 @@ hr {
     gap: 0.5rem;
 }
 
+/* Filtering Status */
+.filter-status {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e2e8f0;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+}
+
+[data-theme="dark"] .filter-status {
+    background: #1e293b;
+    border: 1px solid #334155;
+}
+
+.clear-filter {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: white;
+    transition: var(--transition);
+}
+
+[data-theme="dark"] .clear-filter {
+    background: #0f172a;
+}
+
+.clear-filter:hover {
+    background: var(--link-color);
+    color: white;
+}
 /* Pagination */
 .pagination-container {
     display: flex;
