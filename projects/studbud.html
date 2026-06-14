@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudBud - Microsoft AI Agents Hackathon">
+    <title>StudBud | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/projects.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar-->
+    <div class="navibar">
+        <div class="nav-container">
+            <a class="nav-text" href="../index.html">Home</a>
+            <a class="nav-text" href="../index.html#projects">Projects</a>
+            <a class="nav-text" href="../index.html#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Project Header -->
+    <div class="project-header">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link hidden"><i class="fas fa-arrow-left"></i> Back</a>
+            <h1 class="project-title hidden">StudBud (2025)</h1>
+            <p class="project-subtitle hidden">Microsoft AI Agents Hackathon Project</p>
+        </div>
+    </div>
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <div class="container">
+            <!-- Image Carousel -->
+            <div class="project-carousel w-75 hidden">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1781453098/portfolio/studbud/5dbb1aee-a978-4873-ab42-7b6054a3cbd7.png" loading="lazy" class="d-block w-100" alt="home page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1781453252/portfolio/studbud/290dd0a4-17ed-4a23-a3f1-60a6cd6f1b16.png" class="d-block w-100" alt="quiz page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1781453178/portfolio/studbud/86b3f05d-2528-4297-8060-9ab8dbf4f954.png" class="d-block w-100" alt="chat page">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <div class="project-section hidden">
+                    <h2>Project Overview</h2>
+                    <p>StudBud is an AI-powered study assistant that transforms how students engage with their learning materials. By integrating Java Spring Boot with Azure OpenAI and Azure SQL, it provides a seamless web interface for uploading study notes, generating intelligent summaries, creating interactive quizzes, and participating in contextual Q&A.</p> 
+                    <p>The application utilizes a modular agent architecture—incorporating specialized agents for tutoring, research, study planning, and quizzing—powered by LangChain4j for sophisticated, session-aware interactions. </p>
+                </div>
+
+                <div class="project-section hidden">
+                    <h2>My Contribution</h2>
+                    <ul class="contribution-list">
+                        <li>Azure Foundry, Azure OpenAI, and Azure SQL setup</li>
+                        <li>Implemented the agent architecture using LangChain4j, including the Tutor Agent, Research Agent, Study Planner Agent, and Quiz Agent.</li>
+                        <li>Designed and developed the web interface using Java Spring Boot, enabling users to upload study materials, view summaries, take quizzes, and interact with the agents.</li>
+                        <li>Implemented WebSocket-based real-time chat interface</li>
+                    </ul>
+                </div>
+
+                <div class="project-section hidden">
+                    <h2>Tech Stack</h2>
+                    <div class="tech-stack">
+                        <a href="../index.html?tag=Java#projects" class="tech-tag">Java</a>
+                        <a href="../index.html?tag=Spring Boot#projects" class="tech-tag">Spring Boot</a>
+                        <a href="../index.html?tag=LangChain4j#projects" class="tech-tag">LangChain4j</a>
+                        <a href="../index.html?tag=Azure Foundry#projects" class="tech-tag">Azure Foundry</a>
+                        <a href="../index.html?tag=Azure OpenAI#projects" class="tech-tag">Azure OpenAI</a>
+                        <a href="../index.html?tag=Azure SQL#projects" class="tech-tag">Azure SQL</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+        </div>
+        <div class="copyright-footer">
+            <p>©<span class="copyright-year">2026</span> Copyright: <a href="https://xenonica.github.io">Lim Fang Jun</a></p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="content-enlarge">
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asteroids is a classic arcade game implemented in Python using the Pygame library.">
+    <title>Asteroids | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/projects.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar-->
+    <div class="navibar">
+        <div class="nav-container">
+            <a class="nav-text" href="../index.html">Home</a>
+            <a class="nav-text" href="../index.html#projects">Projects</a>
+            <a class="nav-text" href="../index.html#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Project Header -->
+    <div class="project-header">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link hidden"><i class="fas fa-arrow-left"></i> Back</a>
+            <h1 class="project-title hidden">Asteroids (2026)</h1>
+            <p class="project-subtitle hidden">Boot.dev Python OOP project</p>
+        </div>
+    </div>
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <div class="container">
+            <!-- Image Carousel -->
+            <div class="project-carousel w-75 hidden">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="https://res.cloudinary.com/xenonic/image/upload/v1779341305/portfolio/asteroids/asteroids_enmtpq.gif" loading="lazy" class="d-block w-100" alt="game screen">
+                        </div>         
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <div class="project-section hidden">
+                    <h2>Project Overview</h2>
+                    <p>This project is a hands-on exercise in object-oriented programming with Python. It applies core OOP concepts — inheritance, polymorphism, encapsulation, and composition — by building a classic arcade game.</p> 
+                    <p>The goal is to reinforce OOP principles through practical implementation, creating a fun and interactive game while learning how to structure code effectively.</p>
+                </div>
+
+                <div class="project-section hidden">
+                    <h2>My Contribution</h2>
+                    <ul class="contribution-list">
+                        <li>Designed and implemented the game architecture using OOP principles.</li>
+                        <li>Created classes for game entities such as Player, Asteroid, and Bullet, utilizing inheritance and polymorphism.</li>
+                        <li>Implemented game mechanics including movement, collision detection.</li>
+                        <li>Used encapsulation to manage game state and ensure code modularity.</li>
+                        <li>Tested and debugged the game to ensure smooth gameplay experience.</li>
+                    </ul>
+                </div>
+
+                <div class="project-section hidden">
+                    <h2>Tech Stack</h2>
+                    <div class="tech-stack">
+                        <a href="../index.html?tag=Python#projects" class="tech-tag">Python</a>
+                        <a href="../index.html?tag=Pygame#projects" class="tech-tag">Pygame</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+        </div>
+        <div class="copyright-footer">
+            <p>©<span class="copyright-year">2026</span> Copyright: <a href="https://xenonica.github.io">Lim Fang Jun</a></p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="content-enlarge">
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
