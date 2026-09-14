@@ -82,7 +82,8 @@
                             <li>Head nodes (Pico W, active-passive pair) — aggregate local data and forward it to the server via MQTT QoS 1.</li>
                             <li>Main Server (Raspberry Pi 4) — runs a custom MQTT broker and a Python bridge that decrypts payloads and writes records to Firebase Firestore.</li>
                             <li>Web dashboard — any authorised device can check real-time occupancy, historical trends, and predictive analytics.</li>
-                            <li>Payloads are AES-128-CBC encrypted end-to-end. Automatic failover is handled by MQTT Last Will and Testament (LWT): if the primary head node disconnects, its LWT fires and the backup head node takes over publishing.</li>
+                            <li>Payloads are AES-128-CBC encrypted end-to-end.</li>
+                            <li>Automatic failover is handled by MQTT Last Will and Testament (LWT): if the primary head node disconnects, its LWT fires and the backup head node takes over publishing.</li>
                         </ul>
                     </p>
                     <p>Features:
